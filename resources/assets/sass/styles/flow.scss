@@ -1,0 +1,106 @@
+.site-form {
+  label.image-cb-label {
+    span {
+      font-size: 80px;
+    }
+
+    p {
+      font-weight: 900;
+      margin-top: 10px;
+    }
+
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid $text-color;
+  }
+
+  input.site-type-cb:checked + label {
+    border-width: 2px;
+    border-color: $brand-primary;
+    color: $brand-primary;
+  }
+
+  input.site-blocks-cb:checked + label {
+    border-width: 2px;
+    border-color: $brand-primary;
+    color: $brand-primary;
+  }
+}
+
+#skin-types {
+  div.skin-type {
+    padding: 5px 3rem;
+    text-align: center;
+
+    div.skin-type-button {
+      div.skin-icon {
+        font-size: 80px;
+      }
+
+      background: $body-bg;
+      border: 1px solid $text-color;
+      @include border-radius(6px);
+      width: 100%;
+      height: 160px;
+      cursor: pointer;
+    }
+
+    div.skin-type-button:hover {
+      background: #e9ecee;
+    }
+  }
+}
+
+#site-color {
+  @extend #skin-types;
+
+  div.color-palette {
+    @extend .skin-type;
+
+    div.color-palette-button {
+      @extend .skin-type-button;
+
+      div.color-palette-preview {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 10px auto 20px;
+      }
+
+      div.color-name {
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+#site-typography {
+  @extend #skin-types;
+
+  div.typography {
+    @extend .skin-type;
+
+    div.typography-button {
+      @extend .skin-type-button;
+
+      span {
+        font-weight: 900;
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+#site-layout {
+  @extend #skin-types;
+
+  div.layout {
+    @extend .skin-type;
+
+    div.layout-button {
+      @extend .skin-type-button;
+    }
+  }
+}

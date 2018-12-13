@@ -1,0 +1,1 @@
+@section('dashboard_content')@endsection

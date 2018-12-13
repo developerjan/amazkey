@@ -1,0 +1,28 @@
+.hidden {
+  display: none !important;
+}
+
+ul.parsley-errors-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    color: $body-bg;
+    font-style: italic;
+    background: rgba(187, 27, 27, 0.6);
+  }
+}
+
+a.start-site-link {
+  border: 1px solid $body-bg;
+  height: 36px;
+  width: 140px;
+  text-align: center;
+  padding: 0.4rem 3rem;
+  border-radius: 25px;
+}
+
+a.start-site-link:hover {
+  background: $body-bg;
+  color: $brand-primary !important;
+}
